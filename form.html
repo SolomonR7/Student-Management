@@ -1,0 +1,117 @@
+<html>
+<head>
+<title> Student Data </title>
+<style>
+*{
+margin:0;
+padding:0;
+font-family: Century Gothic;
+}
+#head{
+background-color: 000080;
+color: white;
+text-align: center;
+letter-spacing: 3px;
+height: 100px;
+}
+
+body{
+background-color: #d3d3d3;
+}
+
+ul{
+float: right;
+list-style-type:none;
+margin-top: 12.5px;
+
+}
+
+ul li{
+display: inline-block;
+}
+
+ul li a{
+text-decoration: none;
+color: #fff;
+padding: 5px 20px;
+border:1px solid transparent;
+transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+background-color:#fff;
+color: #000;
+}
+
+
+
+.links{
+max-width: 1200px;
+margin: auto;
+}
+
+#form{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 70px;
+}
+
+#td{
+text-align: center;
+font-size: large;
+font-weight: bold;
+}
+
+#btn {
+  background-color: #000080;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="head">
+
+<p style="font-weight: bold; font-size: x-large;"><br>
+IDA SCUDDER SCHOOL</p>
+<div class="links">
+
+<ul>
+<li><a href="#">Select Student</a></li>
+<li><a href="#">Select Class</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="form">
+<form name="adform" action="disp.php" method="post">
+<table id="td" cellspacing="20" cellpadding="20">
+<tr>
+<td>Enter the admission number: </td>
+<td><input type="text" name="ad"></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="SUBMIT" id="btn">
+</td></tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>
